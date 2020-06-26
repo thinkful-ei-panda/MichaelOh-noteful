@@ -1,0 +1,12 @@
+
+
+.note-list {
+    display: block;
+    margin-left: 500px; 
+}
+
+.folder-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
