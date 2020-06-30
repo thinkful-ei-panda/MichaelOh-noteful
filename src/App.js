@@ -91,12 +91,20 @@ render() {
           <Route exact path='/addNote' component={MainSidebar}/>
 
           <Route exact path='/addNote' component={AddNote}/>
+
+          </ErrorBoundary>
+
+          <ErrorBoundary>
         
           <Route exact path='/' component={MainSidebar}/>
 
           <Route exact path='/folder/:folderId' component={FolderSidebar}/>
 
           <Route exact path='/note/:noteId' component={NoteSidebar}/>
+
+          </ErrorBoundary>
+
+          <ErrorBoundary>
 
           <Route exact path='/'  component={MainMainNotes}/>
 
