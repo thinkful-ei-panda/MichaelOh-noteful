@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom'
 import UserContext from './UserContext';
-import propTypes from 'prop-types'
+
 
 
 function NoteMain(props) {
@@ -52,8 +52,6 @@ function NoteMain(props) {
     )
 };
 
-NoteMain.propTypes = {
-    props: propTypes.object
-}
+
 
 export default withRouter(NoteMain);

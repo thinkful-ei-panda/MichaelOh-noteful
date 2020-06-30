@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import UserContext from './UserContext';
-import propTypes from 'prop-types'
+
 
 function MainMainNotes() {
     return (
@@ -28,8 +28,6 @@ function MainMainNotes() {
     )
 };
 
-MainMainNotes.propTypes = {
-    props: propTypes.func.isRequired
-}
+
 
 export default MainMainNotes;

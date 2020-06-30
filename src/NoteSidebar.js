@@ -1,7 +1,7 @@
 import React from 'react';
 import UserContext from './UserContext';
 import { withRouter} from 'react-router-dom'
-import propTypes from 'prop-types'
+
 
 function NoteSidebar(props) {
     return (
@@ -22,7 +22,4 @@ function NoteSidebar(props) {
     )
 }
 
-NoteSidebar.propTypes = {
-    props: propTypes.object.isRequired
-}
 export default withRouter(NoteSidebar);

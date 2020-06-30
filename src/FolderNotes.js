@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import UserContext from './UserContext';
-import propTypes from 'prop-types';
+
 
 function FolderNotes(props) {
     return (
@@ -13,7 +13,6 @@ function FolderNotes(props) {
                             <h2><Link to={`/note/${note.id}`}>Name: {note.name}</Link></h2>
                             <div className="group-row note-group-row">
                                 <p>Modified: {note.modified}</p>
-                                <button>Delete Note</button>
                             </div>
                         </section>
                     )
@@ -29,8 +28,6 @@ function FolderNotes(props) {
     )
 };
 
-FolderNotes.propTypes = {
-    props: propTypes.object
-}
+
 
 export default withRouter(FolderNotes);
